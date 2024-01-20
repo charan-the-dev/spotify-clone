@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/spotify.png">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">My Library</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" title="Search" placeholder="Search Here">
+                <img src="images/search.svg" alt="search Icon">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="songs">
+            <div class="song" id="1">
+                <div class="image">
+                    <img alt="Song Image">
+                </div>
+                <div class="song-title">Maha Ganapathim</div>
+                <img src="images/play.svg" alt="" class="play-pause">
+            </div>
+            <div class="song" id="2">
+                <div class="image">
+                    <img alt="Song Image">
+                </div>
+                <div class="song-title">Jamal Gudu</div>
+                <img src="images/play.svg" alt="" class="play-pause">
+            </div>
+            <div class="song" id="3">
+                <div class="image">
+                    <img alt="Song Image">
+                </div>
+                <div class="song-title">Agar Tum Sath ho</div>
+                <img src="images/play.svg" alt="" class="play-pause">
+            </div>
+            <div class="song" id="4">
+                <div class="image">
+                    <img alt="Song Image">
+                </div>
+                <div class="song-title">College Papa</div>
+                <img src="images/play.svg" alt="" class="play-pause">
+            </div>
+            <div class="song" id="5">
+                <div class="image">
+                    <img alt="Song Image">
+                </div>
+                <div class="song-title">Shape Of You</div>
+                <img src="images/play.svg" alt="" class="play-pause">
+            </div>
+            <div class="song" id="6 ">
+                <div class="image">
+                    <img alt="Song Image">
+                </div>
+                <div class="song-title">Tera Yaar Hooh Main</div>
+                <img src="images/play.svg" alt="" class="play-pause">
+            </div>
+        </section>
+        <section class="container">
+            <section class="active-song">
+                <div class="background-img">
+                    <img src="images/abrars entry.jpg" alt="Background Image">
+                </div>
+                <div class="song-banner">
+                    <img src="images/abrars entry.jpg" alt="Image">
+                </div>
+                <div class="song-name">
+                    Abrar's Entry
+                </div>
+            </section>
+            <section class="progress-bar">
+                <div class="progress-bar-container">
+                    <input type="range" title="Progress Bar" name="progressBar" id="progressBar" min="0" max="100"
+                        value="0">
+                    <div class="status">3:50</div>
+                </div>
+                <div class="buttons">
+                    <img src="images/prev.svg" alt="Prev">
+                    <img src="images/play.svg" alt="PLay and Pause">
+                    <img src="images/next.svg" alt="Next">
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

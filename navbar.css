@@ -1,0 +1,65 @@
+header {
+    background-color: #000;
+    color: white;
+    font-family: system-ui;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav .logo {
+    background-image: url(images/spotify.png);
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li {
+    padding: .25rem .5rem;
+    cursor: pointer;
+}
+
+nav img {
+    width: 10%;
+}
+
+nav .search-container {
+    position: absolute;
+    right: 4rem;
+    display: flex;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    border: 1px solid;
+    border-radius: 2rem;
+    background-color: hsl(0 0% 100% / .2);
+}
+
+nav .search-container input {
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 7px;
+}
+
+nav ul li:hover a {
+    border-bottom: 1px solid;
+}

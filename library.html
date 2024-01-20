@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/spotify.png">
+    <title>My Library</title>
+    <script defer src="recording.js" type="module"></script>
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">My Library</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" title="Search" placeholder="Search Here">
+                <img src="images/search.svg" alt="search Icon">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="message" style="text-align: center;">
+                Click the <em>Start</em> button to record and <em>Stop</em> button to stop the recording
+            </div>
+            <div class="buttons">
+                <button class="button" type="button">Start</button>
+                <button class="button" type="button">Stop</button>
+            </div>
+            <div class="audio-container">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

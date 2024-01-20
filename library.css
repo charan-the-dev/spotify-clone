@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+button {
+    font-size: 1.5rem;
+    margin: 2rem;
+    border: 1px solid;
+    padding: .5em 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:first-child {
+    color: #4cbb17;
+}
+
+button:last-child {
+    color: red;
+}
+
+button:first-child:hover {
+    background-color: #4cbb17;
+    color: white;
+}
+
+button:last-child:hover {
+    background-color: red;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.message em:first-child {
+    color: #4cbb17;
+    font-weight: bolder;
+}
+
+.message em:last-child {
+    color: red;
+    font-weight: bolder;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+}
+
+.dot::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -75%;
+    top: -75%;
+    border-radius: inherit;
+    border: 3px solid red;
+    animation: blink 2s linear infinite;
+    opacity: 0;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+
+.recording {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.audio-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.audio-container a {
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+}
+
+.audio-container a:hover,
+.audio-container a:focus {
+    background-color: #000;
+    color: #fff;
+}
